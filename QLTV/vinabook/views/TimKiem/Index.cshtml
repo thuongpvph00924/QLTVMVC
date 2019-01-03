@@ -1,0 +1,81 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model PagedList.PagedList<Vinabook.Models.Sach>
+    
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+
+
+
+<link href="~/Content/TrangChuCss.css" rel="stylesheet" />
+<div class="row">
+    <div class="product-big-title-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-bit-title text-center">
+                        <h2>Tìm kiếm sách</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+&nbsp;
+
+
+
+
+<div class="container "id="divTimKiem">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="text-primary"><h3>@ViewBag.ThongBao</h3></div>
+            <div class="row">
+                @Html.Partial("_Partial_1_Sach", Model)
+            </div>
+        </div>
+        <div class="col-md-3">
+            <h3>&nbsp;</h3>
+            @Html.Action("SachCoTheBanQuanTam_Partial", "Sach")
+            @* @Html.Partial("_Partial_1_Sach_Min");*@
+        </div>
+    </div>
+</div>
+
+<div style="clear:both"></div>
+
+<div class="MenuTrang  text-center">
+    <div class="col-md-9">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { ViewBag.Key, page = page }))
+    </div>
+</div>
+<div style="clear:both"></div>
+
+<style>
+    .MenuTrang li {
+        display: inline;
+    }
+</style>
+
+<script>
+    window.onload = function () {
+        pageScroll();
+    };
+    function pageScroll() {
+        window.scrollBy(0, 30); // horizontal and vertical scroll increments
+        //scrolldelay = setTimeout('pageScroll()', 10); // scrolls every 100 milliseconds
+        scrolldelay = setTimeout(function () {
+            pageScroll();
+            var scrollPosition = $(window).scrollTop();
+            if (scrollPosition > 680)
+                stopTimeOut();
+        }, 10);
+    }
+    function stopTimeOut() {
+       // debugger;
+        clearTimeout(scrolldelay);
+    }
+</script>

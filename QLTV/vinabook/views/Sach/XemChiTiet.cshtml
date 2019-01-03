@@ -1,0 +1,110 @@
+﻿@using Vinabook.Models;
+@model Sach
+@{
+    ViewBag.Title = "XemChiTiet";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <h2>Chi Tiết Tài Liệu</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="single-product-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+
+                @*San pham cung chu de*@
+                @Html.Action("sachCungChuDePartial", "Sach", new { machude = Model.MaChuDe })
+
+            </div>
+            <div class="col-md-8">
+                <div class="product-content-right">
+                    <div class="product-breadcroumb">
+                        <a href="@Url.Content("/Home/Index/")">Trang Chủ</a>
+                        <a href="">@ViewBag.TenChuDe</a>
+                        <a href="">@Model.TenSach</a>
+
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="product-images">
+                                <div class="product-main-img">
+                                    <img src="@Url.Content("~/Content/HinhAnhSP/"+Model.AnhBia)" alt="">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="product-inner">
+                                <h2 class="product-name">@Model.TenSach</h2>
+                                <div class="product-inner-price">
+
+                                </div>
+                                @if (Model.SoLuongTon < 1)
+                                {
+                                    <div><strong style="color:red">0 quyển </strong> </div>
+                                }
+                                else
+                                {
+                                    <div>Còn: <strong style="color: red"> @Model.SoLuongTon quyển</strong></div>
+                                }
+                                <br />
+                                @*Them vao gio hang*@
+
+                                @*ket thuc ham them vao gio hang*@
+                                <div class="product-inner-category">
+                                    <p>Nhà xuất bản: <a href="">@ViewBag.NhaXuatBan</a>.
+                                    <p>Kệ Sách:&emsp;  <a href="">@Model.KeSach</a>
+
+
+
+
+
+
+                                    <p>Tác giả: </p>
+                                    @foreach (var item in (List<TacGia>)ViewBag.listTacGia)
+                                    {
+                                        <i class="fa fa-angle-right"></i>
+                                        <a>@item.TenTacGia</a>
+                                        <br />
+                                    }
+                                </div>
+                                <div role="tabpanel">
+                                    <ul class="product-tab" style="border:none" role="tablist">
+                                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Mô tả</a></li>
+
+                                    </ul>
+                                    <div class="page-header"></div>
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane fade in active" id="home">
+                                           
+                                            <h2>Tóm tắt nội dung:</h2>
+                                            <p>@Model.MoTa</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    @Html.Action("SachGanDayPartial", "Sach")
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

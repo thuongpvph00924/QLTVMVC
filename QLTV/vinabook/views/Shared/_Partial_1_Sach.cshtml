@@ -1,0 +1,71 @@
+﻿@using PagedList.Mvc;
+@using PagedList;
+@model PagedList.PagedList<Vinabook.Models.Sach>
+
+<div class="row">
+    <ul>
+        @foreach (var item in Model)
+        {
+            string tenTacGia="",xuonghang= "\n                 ";
+            using (Vinabook.Models.QuanLyBanSachEntities db = new Vinabook.Models.QuanLyBanSachEntities())
+            {
+                var listThamGia = from s in db.ThamGias
+                                  where s.MaSach == item.MaSach
+                                  select s;
+                int i = 0;
+                foreach (var Tacgiatg in listThamGia)
+                {
+                    i++;
+                    var listtacgia = from s in db.TacGias
+                                     where s.MaTacGia == Tacgiatg.MaTacGia
+                                     select s;
+
+                    foreach(var tacgia in listtacgia)
+                    {
+
+                        tenTacGia += "- "+ tacgia.TenTacGia;
+                    }
+                    if (i < Convert.ToInt16(listThamGia.Count()))
+                    {
+                        tenTacGia += xuonghang;
+                    }
+                }
+
+            }
+
+            string title = "Tên:           " + item.TenSach + "\nNXB:          " + item.NhaXuatBan.TenNXB + "\nChủ đề:     " + item.ChuDe.TenChuDe +"\nTác Giả:   "+tenTacGia+ "\nNội dung: " + item.MoTa ;
+            <li>
+
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <div class="thumbnail no-under">
+                        <a href="@Url.Action("XemChiTiet","Sach", new { @masach=item.MaSach })" title="@title" data-toggle="tooltip">
+                            <img class="img-responsive" src="@Url.Content("/Content/HinhAnhSP/"+item.AnhBia)" alt="" style="height:186px">
+                            <div class="caption">
+                                @* Hiển thị tên 2 dòng *@
+                                <div style="line-height:2em; height:4em;overflow:hidden; margin:0 0 0.5em 0" class="text-center">
+                                    <h3>@item.TenSach</h3>
+                                </div>
+
+                                <div class="product-carousel-price">
+                                   
+                                    
+                                </div>
+                                @if (item.SoLuongTon < 1)
+                                {
+                                    <div  ><strong  style="color:red">0 quyển</strong> </div>
+                                }
+                                else { 
+                                <div>Còn: <strong style="color: red"> @item.SoLuongTon quyển</strong></div>
+                                }
+                            </div>
+                        </a>
+                        
+
+                    </div>
+                </div>
+
+            </li>
+        }
+    </ul>
+
+</div>

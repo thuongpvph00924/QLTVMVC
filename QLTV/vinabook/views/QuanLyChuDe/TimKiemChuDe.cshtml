@@ -1,0 +1,107 @@
+﻿@using PagedList.Mvc;
+@using PagedList;
+@model PagedList.PagedList<Vinabook.Models.ChuDe>
+
+@{
+    ViewBag.Title = "TimKiemChuDe";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<div class="container">
+    <div class=" row pull-left">
+        <a href="@Url.Action("Create")" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i> Thêm chủ đề</a>
+    </div>
+    <br />
+    <p>&nbsp;</p>
+
+    <div class=" row pull-left">
+        <form action="/QuanLyChuDe/TimKiemChuDe" method="post" style="width:300px">
+            <input id="txtTimKiem" name="txtTimKiem" placeholder=" search" class="search-query form-control " style="width:200px"
+                   type="text">
+        </form>
+    </div>
+    <br />
+    <p>&nbsp;</p>
+</div>
+
+<div id="Xoa_CD">
+    @{ Html.RenderPartial("IndexPartial");}
+</div>
+
+    Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/ @Model.PageCount
+    <div class="MenuTrang">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+    </div>
+    <style>
+        .MenuTrang li {
+            display: inline;
+        }
+    </style>
+    <script>
+    function delete_article(Id) {
+        var answer = confirm("Bạn có chắc muốn xóa chủ đề này?");
+        if (answer) {
+            //alert('Xác nhận xóa');
+            Remove(Id);
+        }
+    }
+
+    function Remove(Id) {
+        $.ajax({
+            type: 'POST',
+            url: '/QuanLyChuDe/Remove',
+            data: { id: Id },
+            success: function (data) {
+                $.post(data.Url, function (partial) {
+                    $("#Xoa_CD").html(partial);
+                });
+            }
+        });
+    }
+    </script>
+    <script>
+
+    function ChiTietCD(macd) {
+            $.ajax({
+                type: 'POST',
+                url: '/QuanLyChuDe/XemCTCD',
+                data: {macd:macd},
+                success: function (data) {
+                    $.post(data.Url, function (partial) {
+                        $("#All_Dialog").html(partial)
+                    });
+                }
+            });
+            //$('#myModal').on('shown.bs.modal', function () {
+            //    $(this).find('.modal-dialog').css({
+            //        width: '800px',
+            //        height: 'auto',
+            //        'max-height': '100%'
+            //    });
+            //});
+        $("#myModal").modal();
+    }
+    </script>
+    @* đây là cái bảng dialog *@
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Chi tiết chủ đề</h4>
+                </div>
+                <div class="modal-body">
+                    @* nội dung bên trong all_dialog *@
+                    <div id="All_Dialog"></div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+

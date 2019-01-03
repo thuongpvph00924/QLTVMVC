@@ -1,0 +1,23 @@
+﻿@{ string ssdt = "";}
+@if(Session["TaiKhoan"] != null)
+{
+    if (Session["TaiKhoan"].ToString().Trim() != "")
+    {
+        Vinabook.Models.KhachHang khg = Session["TaiKhoan"] as Vinabook.Models.KhachHang;
+        ssdt = khg.DienThoai;
+    }
+
+}
+<div id="All_Dialog" class="" style="padding:20px 30px">
+   
+    <hr />
+    <div class="row">
+       
+        <div class="col-md-5">
+            <p class="text-center"><img style="margin:auto;" class="img-responsive  " src="~/Content/HinhAnh/icon_hotline.png" /></p>
+            <p><strong>HOTLINE </strong><span><strong style="color:blue">0344638859</strong></span></p>
+            <p>Tổng đài chăm sóc và Hỗ trợ Khách hàng hoạt động từ 7:30 - 20:00 mỗi ngày (riêng Chủ Nhật, ngày lễ đến 17:00)</p>
+            
+        </div>
+    </div>
+</div>

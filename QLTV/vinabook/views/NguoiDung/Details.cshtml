@@ -1,0 +1,248 @@
+﻿@model Vinabook.Models.KhachHang
+
+@{
+
+    ViewBag.Title = "Thông tin khách hàng";
+    Layout = "";
+}
+
+
+
+<!-- CSS -->
+@*<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Oleo+Script:400,700'>*@
+<link href="~/Content/Register/css/OleoScript.css" rel="stylesheet" />
+<link href="~/Content/Register/css/PTSans.css" rel="stylesheet" />
+<link rel="stylesheet" href="~/Content/Register/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="~/Content/Register/css/style.css">
+
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="logo span4">
+                <h1><a href="">Vinabook Info <span class="red">.</span></a></h1>
+            </div>
+            <div class="links span8">
+                <a class="home" href="" rel="tooltip" data-placement="bottom" data-original-title="Home"></a>
+                <a class="blog" href="" rel="tooltip" data-placement="bottom" data-original-title="Blog"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*<a onclick="KiemTra()">aaaaaaaaaaaaaaaaaaaaa</a>*@
+<div class="register-container container">
+    <div class="row">
+        <div class="iphone span5">
+            <img src="~/Content/Register/img/iphone.png" alt="">
+        </div>
+        <div class="register span6">
+            <form action="" id='input_form' method="post">
+
+                <fieldset>
+                    <h2>Customer Information <span class="red"><strong>VINABOOK</strong></span></h2>
+                    <h4 class="red">@ViewBag.thanhcong</h4>
+                    @*@Html.ValidationSummary(true, "", new { @class = "text-danger red" })*@
+                    <div class="form-group" hidden>
+                        @Html.LabelFor(model => model.MaKH, new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            <input type="text" value="@Model.MaKH" name="MaKH" id="MaKH" size="25" class="" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.HoTen, new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            <input type="text" value="@Model.HoTen" name="HoTen" id="HoTen" size="25" class="required form-control" placeholder="Họ và tên..." autofocus />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.NgaySinh, new { @class = "control-label col-md-2" })
+                        @*<div class="col-md-10">
+                                <input type="date" class="form-control required" id="NgaySinh" name="NgaySinh" value="@Model.NgaySinh">
+                            </div>
+                            <span id="loiNgaySinh"></span>*@
+                        <div class="col-md-10">
+                            @*<input type="text" value="@String.Format("{0:d/M/yyyy}", @Model.NgaySinh)" name="NgaySinh" id="NgaySinh" size="25" class="required form-control" autofocus />*@
+                            @Html.EditorFor(model => model.NgaySinh, new { htmlAttributes = new { @class = "form-control" } })
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.GioiTinh, new { @class = "control-label col-md-2" })
+                        
+                        @{if (ViewBag.GioiTinh == "Nam")
+                        {
+                            <div class="col-md-10">
+                                <select class="selectpicker show-tick"  name="GioiTinh" id="GioiTinh">
+
+                                    <option value="Nam" selected>Nam</option>
+                                    <option value="Nữ">Nữ</option>
+                                </select>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="col-md-10">
+                                <select class="selectpicker show-tick"  name="GioiTinh" id="GioiTinh">
+
+                                    <option value="Nam" >Nam</option>
+                                    <option value="Nữ" selected>Nữ</option>
+                                </select>
+                            </div>
+                        }                                         
+                        }
+                        @*<div class="col-md-10">
+                                <input type="text" value="@Model.GioiTinh" name="GioiTinh" id="GioiTinh"  size="25" class="required form-control" autofocus />
+                            </div>*@
+                    </div>
+
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DienThoai, new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            <input type="number" value="@Model.DienThoai" name="DienThoai" id="DienThoai" size="25" class="required form-control" placeholder="Điện thoại..." />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.TaiKhoan, new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            <input @*onkeypress="KiemTra()"*@ type="text" value="@Model.TaiKhoan" readonly name="TaiKhoan" id="TaiKhoan" size="25" class="required form-control" placeholder="Tài khoản..." />
+                            @Html.ValidationMessageFor(model => model.TaiKhoan, "", new { @class = "text-danger" })
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.MatKhau, new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            <input type="password" value="@Model.MatKhau" name="MatKhau" id="MatKhau" size="25" class="required form-control" placeholder="Mật khẩu..." />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="control-label col-md-3">Nhập lại mật khẩu :</label>
+                        <div class="col-md-6">
+                            <input type="password" value="@Model.MatKhau" name="cpassword" id="cpassword" size="25" class="form-control" placeholder="Nhập lại mật khẩu..." />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Email, new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            <input type="email" value="@Model.Email" name="Email" id="Email" size="25" class="required form-control" placeholder="Email..." />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DiaChi, new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            <input type="text" value="@Model.DiaChi" name="DiaChi" id="DiaChi" size="25" class="required form-control" placeholder="Địa chỉ..." />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input id="btnSubmit" type="submit" value="Cập nhật" class="btn btn-group-vertical" />
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            }
+
+        </div>
+    </div>
+</div>
+<!-- Javascript -->
+<script src="~/Content/Register/js/jquery-1.8.2.min.js"></script>
+<script src="~/Content/AdminLayout/js/jquery.validate.min.js"></script>
+<script src="~/Content/Register/bootstrap/js/bootstrap.min.js"></script>
+<script src="~/Content/Register/js/jquery.backstretch.min.js"></script>
+<script src="~/Content/Register/js/scripts.js"></script>
+
+<script>
+
+
+
+    $(document).ready(function () {
+        var validator = $("#input_form").validate({
+            rules: {
+                username: "required",
+
+                password: {
+                    required: true,
+                    minlength: 6,
+                },
+                cpassword: {
+                    equalTo: "#MatKhau"
+                },
+                //email: {
+                //    required: true,
+                //    email: true
+                //},
+                //Email: {
+                //    required: true,
+                //    Email: true
+                //},
+
+                DiaChi: "required",
+                DienThoai: "required",
+
+                HoTen: "required",
+                NgaySinh: "required",
+                TaiKhoan: "required",
+                MatKhau: "required"
+
+
+
+            },
+            messages: {
+                username: "Hãy điền tên đăng nhập.",
+                password: {
+                    required: "Hãy điền mật khẩu",
+                    minlength: "Mật khẩu ít nhất 6 ký tự"
+                },
+                cpassword: {
+                    equalTo: "Mật khẩu xác nhận không chính xác"
+                },
+                //email: {
+                //    required: "Hãy nhập 1 địa chỉ email hợp lệ",
+                //    email:"Địa chỉ email không hợp lệ"
+                //},
+                //Email: {
+                //    required: "Hãy nhập địa chỉ email",
+                //    Email: "Địa chỉ email không hợp lệ"
+                //},
+                TaiKhoanTrung: "Tên tài khoản đã tồn tại.",
+                DiaChi: "Hãy điền địa chỉ.",
+                DienThoai: "Hãy điền số điện thoại.",
+
+                HoTen: "Hãy điền họ tên.",
+                NgaySinh: "Hãy chọn ngày sinh.",
+                TaiKhoan: "Hãy điền tài khoản.",
+                MatKhau: "Hãy điền mật khẩu."
+
+
+            }
+        });
+    });
+</script>
+<style>
+    /*các thông báo lỗi sẽ được chứa trong các label với class là error*/
+    red {
+        color: red;
+    }
+
+    label.error {
+        color: red;
+    }
+</style>
+
+
+
+
+

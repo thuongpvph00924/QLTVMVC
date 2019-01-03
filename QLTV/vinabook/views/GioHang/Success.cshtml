@@ -1,0 +1,115 @@
+﻿
+@using Vinabook.Models;
+
+@model List<CartItem>
+@* day la cai partial sau khi dat hang xong *@
+
+<table cellspacing="0" class="shop_table cart">
+    <thead>
+        <tr>
+            <th class="product-remove">&nbsp;</th>
+            <th class="product-thumbnail">&nbsp;Hình Ảnh</th>
+            <th class="product-name">Tên Sách</th>
+            <th class="product-price"> Đơn Giá</th>
+            <th class="product-quantity">Số Lượng</th>
+            <th class="product-subtotal">Thành Tiền</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr class="cart_item">
+
+                <td class="product-remove">
+                    <a style="cursor:pointer" title="Xóa sản phẩm này" class="remove" onclick="Remove('@item.productOrder.MaSach')"><i class="glyphicon glyphicon-remove"></i></a>
+                </td>
+
+                <td class="product-thumbnail">
+                    
+                    <a href="@Url.Action("XemChiTiet","Sach", new { @masach = item.productOrder.MaSach })"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="@Url.Content("/Content/HinhAnhSP/" + item.productOrder.AnhBia)"></a>
+                </td>
+
+                <td class="product-name">
+                    <a href="@Url.Action("XemChiTiet","Sach", new { @masach = item.productOrder.MaSach })">@item.productOrder.TenSach</a>
+                </td>
+
+                <td class="product-price">
+                    <span  class="amount">@string.Format("{0:0,0}", item.productOrder.GiaBan) VNĐ</span>
+                </td>
+
+                <td class="product-quantity">
+
+                    <input  id="SoLuong[@item.productOrder.MaSach]" type="number" size="4" min="0" step="1" style="width:50px;" value="@item.Quality" />
+                </td>
+
+                <td class="product-subtotal">
+                    <span id="ThanhTien[@item.productOrder.MaSach]" class="amount">@string.Format("{0:0,0}", item.productOrder.GiaBan * item.Quality)</span>
+                </td>
+
+                <td>
+                    <input id="CapNhat" type="submit" class="button" onclick="CapNhat('@item.productOrder.MaSach')" title="Cập nhật số lượng" value="Cập nhật" />
+                </td>
+            </tr>
+
+        }
+
+        <tr>
+            <th class="actions" colspan="4" >
+                <div class="coupon" hidden>
+                    <input type="text" placeholder="Mã khuyến mãi"  style="width:150px" id="coupon_code" class="input-text" name="coupon_code">
+                    <input type="submit" onclick="KhuyenMai()" value="Áp dụng" name="apply_coupon" class="button">
+                    <span id="SpanKhuyenMai" style="color:red"></span>
+                    <span id="SpanGiaTriKhuyenMai" style="color:red"></span>
+                </div>
+
+            </th>
+            <th>Tổng(VNĐ):</th>
+            @{double tongTien = 0;}
+            @foreach (var item in Model)
+            {
+                tongTien += (double)item.productOrder.GiaBan * item.Quality;
+            }
+            <th>
+                <span id="KhuyenMaiBadge" class="badge badge-warning" style="position:relative;right:-20px;bottom:-5px;"></span>
+                <div id="tongtien_div" style="">
+                    <span id="TongTien" class="tongtien_class" >
+                        @string.Format("{0:0,0}", @tongTien)
+                    </span>
+                    
+                </div>
+                
+                <span id="tongtienkm" style="color:red"></span>
+            </th>
+            @{ int i = 0;}
+            @if (Session["TaiKhoan"] == null || Session["TaiKhoan"].ToString().Trim() == "")
+            {
+                i = 1;
+            }
+            <th>
+                <button  @*href="/GioHang/DatHang/"*@ onclick="DatHang('@i')" class="btn btn-warning" >Đặt hàng</button>
+            </th>
+        </tr>
+    </tbody>
+</table>
+<script>
+    $(document).ready(function () {
+        //alert(makm);
+        // text-decoration: line-through;
+        var elem = document.getElementById("coupon_code");
+        elem.value = makm;
+        if (makm != "") {
+            $("#SpanKhuyenMai").html(tbkhuyenmai);
+            $("#KhuyenMaiBadge").html("-" + giatriKhuyenMai);
+
+            var ele = document.getElementById("tongtien_div");
+            ele.style.setProperty("text-decoration", "line-through");
+            var giatri=giatriKhuyenMai.split('%');
+            var tongtienjs =@tongTien- (giatri[0]/100) * @tongTien ;
+            $("#tongtienkm").html(tongtienjs.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
+            
+        }
+        tongtienlayout=@tongTien;
+    });
+</script>

@@ -1,0 +1,76 @@
+﻿@using Vinabook.Models;
+
+@model List<CartItem>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <h2>Giỏ Hàng</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="single-product-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                @*<div class="single-sidebar">*@
+                    @* co the ban quan tam *@
+                    @*@Html.Partial("_Partial_1_Sach_Min");*@
+                    @Html.Action("SachCoTheBanQuanTam_Partial", "Sach")
+                    @*@Html.Action("DanhMucChuDePartial", "ChuDe")*@
+                @*</div>*@
+            </div>
+
+
+            <div class="col-md-9">
+                <div class="product-content-right">
+                    <div class="woocommerce">
+                        <div id="GioHang">
+                            @{ Html.RenderPartial("Success");}
+                        </div>
+
+                        <div class="">
+
+
+                            @Html.Action("SachGanDayPartial", "Sach")
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    window.onload = function () {
+        pageScroll();
+    };
+    function pageScroll() {
+        window.scrollBy(0, 30); // horizontal and vertical scroll increments
+        //scrolldelay = setTimeout('pageScroll()', 10); // scrolls every 100 milliseconds
+        scrolldelay = setTimeout(function () {
+            pageScroll();
+            var scrollPosition = $(window).scrollTop();
+            if (scrollPosition > 680)
+                stopTimeOut();
+        }, 10);  
+    }
+    function stopTimeOut() {
+       // debugger;
+        clearTimeout(scrolldelay);
+    }
+</script>

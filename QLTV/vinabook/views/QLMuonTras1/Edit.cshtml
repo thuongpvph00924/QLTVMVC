@@ -1,0 +1,61 @@
+﻿@model Vinabook.Models.QLMuonTra
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    <h3>Chỉnh sửa thông tin mượn -trả</h3>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.MaMuonTra)
+    <div class="form-group">
+        @Html.LabelFor(model => model.MaKH, "Mã Thư Viện", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("MaKH", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.MaKH, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.MaSach, "Mã Sách", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("MaSach", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.MaSach, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    
+    <div class="form-group">
+        @Html.LabelFor(model => model.NgayTra, "Ngày Trả", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <input type="date" class="form-control required" id="NgayTra" name="NgayTra" max="2115-12-30">
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.TrangThai, "Trạng Thái", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <input type="radio" name="TrangThai" id="TrangThai" value="Chưa Trả" checked /> : Chưa Trả<br />
+            <input type="radio" name="TrangThai" id="TrangThai" value="Đã Trả" /> : Đã Trả<br />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Save" class="btn btn-warning" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Quay Lại", "Index")
+</div>

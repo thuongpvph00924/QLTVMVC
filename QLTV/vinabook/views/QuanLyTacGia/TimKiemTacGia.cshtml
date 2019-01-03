@@ -1,0 +1,89 @@
+﻿
+@{
+    ViewBag.Title = "TimKiemTacGia";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+@using PagedList.Mvc;
+@using PagedList;
+@model PagedList.PagedList<Vinabook.Models.TacGia>
+
+
+
+<div class="container">
+    <div class="row pull-left">
+        <a href="@Url.Action("Create")" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i> Thêm Tác Giả</a>
+    </div>
+    <br />
+    <p>&nbsp;</p>
+
+    <div class="row pull-left">
+        <form action="/QuanLyTacGia/TimKiemTacGia" method="post" style="width:300px">
+            <input id="txtTimKiem" name="txtTimKiem" placeholder="search" class="search-query form-control " style="width:200px"
+                   type="text">
+        </form>
+    </div>
+    <br />
+    <p>&nbsp;</p>
+</div>
+<div class="table-responsive">
+
+
+    <table class="table table-condensed table-bordered table-striped table-hover">
+        <tr>
+            <th>
+                <span class="text-primary">   @Html.DisplayNameFor(model => model.First().TenTacGia)</span>
+            </th>
+            <th>
+                <span class="text-primary">     @Html.DisplayNameFor(model => model.First().DiaChi)</span>
+            </th>
+            <th>
+                <span class="text-primary">    @Html.DisplayNameFor(model => model.First().TieuSu)</span>
+            </th>
+            <th>
+                <span class="text-primary">     @Html.DisplayNameFor(model => model.First().DienThoai)</span>
+            </th>
+            <th></th>
+        </tr>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="col-md-2">
+                        @Html.DisplayFor(modelItem => item.TenTacGia)
+                    </td>
+                    <td class="col-md-2">
+                        @Html.DisplayFor(modelItem => item.DiaChi)
+                    </td>
+                    <td class="col-md-6">
+                        @Html.DisplayFor(modelItem => item.TieuSu)
+                    </td>
+                    <td class="col-md-1">
+                        @Html.DisplayFor(modelItem => item.DienThoai)
+                    </td>
+                    <td class="col-md-1">
+                        <a href="/QuanLyTacGia/Edit?id=@item.MaTacGia" class="btn btn-warning btn-sm btn-color-primary"><i class="glyphicon glyphicon-edit"></i></a>
+                        <br />
+
+                        <br />
+                        <a href="/QuanLyTacGia/Delete?id=@item.MaTacGia" class="btn btn-danger btn-sm btn-color-primary"><i class="glyphicon glyphicon-trash"></i></a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+ Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/ @Model.PageCount
+<div class="MenuTrang">
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+</div>
+
+<style>
+    .MenuTrang li {
+        display: inline;
+    }
+</style>
+

@@ -1,0 +1,12 @@
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\QLThuVien.Model\bin\Debug\QLThuVien.Model.dll.config
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\QLThuVien.Model\bin\Debug\QLThuVien.Model.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\QLThuVien.Model\bin\Debug\QLThuVien.Model.pdb
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\QLThuVien.Model\bin\Debug\EntityFramework.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\QLThuVien.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\QLThuVien.Model\bin\Debug\EntityFramework.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\QLThuVien.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\QLThuVien.Model\obj\Debug\QLThuVien.Model.csprojAssemblyReference.cache
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\QLThuVien.Model\obj\Debug\QLThuVien.Model.csproj.CoreCompileInputs.cache
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\QLThuVien.Model\obj\Debug\QLThuVien.Model.csproj.CopyComplete
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\QLThuVien.Model\obj\Debug\QLThuVien.Model.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\QLThuVien.Model\obj\Debug\QLThuVien.Model.pdb

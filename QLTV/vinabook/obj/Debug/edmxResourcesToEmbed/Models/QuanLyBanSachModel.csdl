@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuanLyBanSachModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Adminnistrator">
+    <Key>
+      <PropertyRef Name="AdminID" />
+    </Key>
+    <Property Name="AdminID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="ChuDe">
+    <Key>
+      <PropertyRef Name="MaChuDe" />
+    </Key>
+    <Property Name="MaChuDe" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenChuDe" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Saches" Relationship="Self.FK_Sach_ChuDe" FromRole="ChuDe" ToRole="Sach" />
+  </EntityType>
+  <EntityType Name="KhachHang">
+    <Key>
+      <PropertyRef Name="MaKH" />
+    </Key>
+    <Property Name="MaKH" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HoTen" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="NgaySinh" Type="DateTime" Precision="3" />
+    <Property Name="GioiTinh" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="DienThoai" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TaiKhoan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MatKhau" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DiaChi" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="QLMuonTras" Relationship="Self.FK__QLMuonTra__MaKH__38996AB5" FromRole="KhachHang" ToRole="QLMuonTra" />
+  </EntityType>
+  <EntityType Name="NhaXuatBan">
+    <Key>
+      <PropertyRef Name="MaNXB" />
+    </Key>
+    <Property Name="MaNXB" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenNXB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DiaChi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DienThoai" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Saches" Relationship="Self.FK_Sach_NhaXuatBan" FromRole="NhaXuatBan" ToRole="Sach" />
+  </EntityType>
+  <EntityType Name="QLMuonTra">
+    <Key>
+      <PropertyRef Name="MaMuonTra" />
+    </Key>
+    <Property Name="MaMuonTra" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaKH" Type="Int32" />
+    <Property Name="MaSach" Type="Int32" />
+    <Property Name="NgayMuon" Type="DateTime" Precision="0" />
+    <Property Name="NgayTra" Type="DateTime" Precision="0" />
+    <Property Name="TrangThai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="KhachHang" Relationship="Self.FK__QLMuonTra__MaKH__38996AB5" FromRole="QLMuonTra" ToRole="KhachHang" />
+    <NavigationProperty Name="Sach" Relationship="Self.FK__QLMuonTra__MaSac__398D8EEE" FromRole="QLMuonTra" ToRole="Sach" />
+  </EntityType>
+  <EntityType Name="Sach">
+    <Key>
+      <PropertyRef Name="MaSach" />
+    </Key>
+    <Property Name="MaSach" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenSach" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="GiaBan" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="MoTa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NgayCapNhat" Type="DateTime" Precision="3" />
+    <Property Name="AnhBia" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SoLuongTon" Type="Int32" />
+    <Property Name="MaChuDe" Type="Int32" />
+    <Property Name="MaNXB" Type="Int32" />
+    <Property Name="Moi" Type="Int32" />
+    <Property Name="KeSach" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ChuDe" Relationship="Self.FK_Sach_ChuDe" FromRole="Sach" ToRole="ChuDe" />
+    <NavigationProperty Name="NhaXuatBan" Relationship="Self.FK_Sach_NhaXuatBan" FromRole="Sach" ToRole="NhaXuatBan" />
+    <NavigationProperty Name="QLMuonTras" Relationship="Self.FK__QLMuonTra__MaSac__398D8EEE" FromRole="Sach" ToRole="QLMuonTra" />
+    <NavigationProperty Name="ThamGias" Relationship="Self.FK_ThamGia_Sach" FromRole="Sach" ToRole="ThamGia" />
+  </EntityType>
+  <EntityType Name="TacGia">
+    <Key>
+      <PropertyRef Name="MaTacGia" />
+    </Key>
+    <Property Name="MaTacGia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenTacGia" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DiaChi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TieuSu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DienThoai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ThamGias" Relationship="Self.FK_ThamGia_TacGia" FromRole="TacGia" ToRole="ThamGia" />
+  </EntityType>
+  <EntityType Name="ThamGia">
+    <Key>
+      <PropertyRef Name="MaSach" />
+      <PropertyRef Name="MaTacGia" />
+    </Key>
+    <Property Name="MaSach" Type="Int32" Nullable="false" />
+    <Property Name="MaTacGia" Type="Int32" Nullable="false" />
+    <Property Name="VaiTro" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ViTri" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Sach" Relationship="Self.FK_ThamGia_Sach" FromRole="ThamGia" ToRole="Sach" />
+    <NavigationProperty Name="TacGia" Relationship="Self.FK_ThamGia_TacGia" FromRole="ThamGia" ToRole="TacGia" />
+  </EntityType>
+  <Association Name="FK_Sach_ChuDe">
+    <End Role="ChuDe" Type="Self.ChuDe" Multiplicity="0..1" />
+    <End Role="Sach" Type="Self.Sach" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ChuDe">
+        <PropertyRef Name="MaChuDe" />
+      </Principal>
+      <Dependent Role="Sach">
+        <PropertyRef Name="MaChuDe" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__QLMuonTra__MaKH__38996AB5">
+    <End Role="KhachHang" Type="Self.KhachHang" Multiplicity="0..1" />
+    <End Role="QLMuonTra" Type="Self.QLMuonTra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KhachHang">
+        <PropertyRef Name="MaKH" />
+      </Principal>
+      <Dependent Role="QLMuonTra">
+        <PropertyRef Name="MaKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sach_NhaXuatBan">
+    <End Role="NhaXuatBan" Type="Self.NhaXuatBan" Multiplicity="0..1" />
+    <End Role="Sach" Type="Self.Sach" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhaXuatBan">
+        <PropertyRef Name="MaNXB" />
+      </Principal>
+      <Dependent Role="Sach">
+        <PropertyRef Name="MaNXB" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__QLMuonTra__MaSac__398D8EEE">
+    <End Role="Sach" Type="Self.Sach" Multiplicity="0..1" />
+    <End Role="QLMuonTra" Type="Self.QLMuonTra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sach">
+        <PropertyRef Name="MaSach" />
+      </Principal>
+      <Dependent Role="QLMuonTra">
+        <PropertyRef Name="MaSach" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ThamGia_Sach">
+    <End Role="Sach" Type="Self.Sach" Multiplicity="1" />
+    <End Role="ThamGia" Type="Self.ThamGia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sach">
+        <PropertyRef Name="MaSach" />
+      </Principal>
+      <Dependent Role="ThamGia">
+        <PropertyRef Name="MaSach" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ThamGia_TacGia">
+    <End Role="TacGia" Type="Self.TacGia" Multiplicity="1" />
+    <End Role="ThamGia" Type="Self.ThamGia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TacGia">
+        <PropertyRef Name="MaTacGia" />
+      </Principal>
+      <Dependent Role="ThamGia">
+        <PropertyRef Name="MaTacGia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QuanLyBanSachEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Adminnistrators" EntityType="Self.Adminnistrator" />
+    <EntitySet Name="ChuDes" EntityType="Self.ChuDe" />
+    <EntitySet Name="KhachHangs" EntityType="Self.KhachHang" />
+    <EntitySet Name="NhaXuatBans" EntityType="Self.NhaXuatBan" />
+    <EntitySet Name="QLMuonTras" EntityType="Self.QLMuonTra" />
+    <EntitySet Name="Saches" EntityType="Self.Sach" />
+    <EntitySet Name="TacGias" EntityType="Self.TacGia" />
+    <EntitySet Name="ThamGias" EntityType="Self.ThamGia" />
+    <AssociationSet Name="FK_Sach_ChuDe" Association="Self.FK_Sach_ChuDe">
+      <End Role="ChuDe" EntitySet="ChuDes" />
+      <End Role="Sach" EntitySet="Saches" />
+    </AssociationSet>
+    <AssociationSet Name="FK__QLMuonTra__MaKH__38996AB5" Association="Self.FK__QLMuonTra__MaKH__38996AB5">
+      <End Role="KhachHang" EntitySet="KhachHangs" />
+      <End Role="QLMuonTra" EntitySet="QLMuonTras" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sach_NhaXuatBan" Association="Self.FK_Sach_NhaXuatBan">
+      <End Role="NhaXuatBan" EntitySet="NhaXuatBans" />
+      <End Role="Sach" EntitySet="Saches" />
+    </AssociationSet>
+    <AssociationSet Name="FK__QLMuonTra__MaSac__398D8EEE" Association="Self.FK__QLMuonTra__MaSac__398D8EEE">
+      <End Role="Sach" EntitySet="Saches" />
+      <End Role="QLMuonTra" EntitySet="QLMuonTras" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ThamGia_Sach" Association="Self.FK_ThamGia_Sach">
+      <End Role="Sach" EntitySet="Saches" />
+      <End Role="ThamGia" EntitySet="ThamGias" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ThamGia_TacGia" Association="Self.FK_ThamGia_TacGia">
+      <End Role="TacGia" EntitySet="TacGias" />
+      <End Role="ThamGia" EntitySet="ThamGias" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

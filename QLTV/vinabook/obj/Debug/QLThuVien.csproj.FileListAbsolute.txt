@@ -1,0 +1,376 @@
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\csc.exe
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\vbc.exe
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\VBCSCompiler.exe
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\Vinabook.dll.config
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\Vinabook.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\Vinabook.pdb
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\EntityFramework.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\EntityFramework.SqlServer.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\EntityFramework.SqlServerCompact.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\PagedList.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\PagedList.Mvc.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\System.Data.SqlServerCe.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\System.Web.Helpers.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\System.Web.Mvc.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\System.Web.Razor.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\System.Web.Webpages.Deployment.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\System.Web.Webpages.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\System.Web.Webpages.Razor.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\EntityFramework.xml
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\EntityFramework.SqlServer.xml
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\EntityFramework.SqlServerCompact.xml
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\PagedList.xml
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\PagedList.Mvc.xml
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\System.Web.Razor.xml
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\System.Web.Webpages.xml
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\System.Web.Webpages.Deployment.xml
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\System.Web.Webpages.Razor.xml
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\System.Web.Helpers.xml
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\System.Web.Mvc.xml
+C:\Users\PIC\Desktop\QLTV\Vinabook\obj\Debug\QLThuVien.csprojAssemblyReference.cache
+C:\Users\PIC\Desktop\QLTV\Vinabook\obj\Debug\QLThuVien.csproj.CoreCompileInputs.cache
+C:\Users\PIC\Desktop\QLTV\Vinabook\obj\Debug\QLThuVien.csproj.CopyComplete
+C:\Users\PIC\Desktop\QLTV\Vinabook\obj\Debug\Vinabook.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\obj\Debug\Vinabook.pdb
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\roslyn\csc.exe
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\roslyn\vbc.exe
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\roslyn\VBCSCompiler.exe
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\Vinabook.dll.config
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\Vinabook.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\Vinabook.pdb
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\x86\sqlcese40.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\x86\sqlceqp40.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\x86\sqlceme40.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\x86\sqlceer40EN.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\x86\sqlcecompact40.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\x86\sqlceca40.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\x86\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\x86\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\amd64\sqlcese40.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\amd64\sqlceqp40.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\amd64\sqlceme40.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\amd64\sqlceer40EN.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\amd64\sqlcecompact40.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\amd64\sqlceca40.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\amd64\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\amd64\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\EntityFramework.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\EntityFramework.SqlServer.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\EntityFramework.SqlServerCompact.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\PagedList.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\PagedList.Mvc.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\System.Data.SqlServerCe.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\System.Web.Helpers.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\System.Web.Mvc.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\System.Web.Razor.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\System.Web.Webpages.Deployment.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\System.Web.Webpages.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\System.Web.Webpages.Razor.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\EntityFramework.xml
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\EntityFramework.SqlServer.xml
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\EntityFramework.SqlServerCompact.xml
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\PagedList.xml
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\PagedList.Mvc.xml
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\System.Web.Razor.xml
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\System.Web.Webpages.xml
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\System.Web.Webpages.Deployment.xml
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\System.Web.Webpages.Razor.xml
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\System.Web.Helpers.xml
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\bin\System.Web.Mvc.xml
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\obj\Debug\QLThuVien.csprojAssemblyReference.cache
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\obj\Debug\QLThuVien.csproj.CoreCompileInputs.cache
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\obj\Debug\QLThuVien.csproj.CopyComplete
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\obj\Debug\Vinabook.dll
+C:\Users\PIC\Desktop\New folder\QLTV\Vinabook\obj\Debug\Vinabook.pdb
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\csc.exe
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\vbc.exe
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\VBCSCompiler.exe
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\Vinabook.dll.config
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\Vinabook.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\Vinabook.pdb
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\x86\sqlcese40.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\x86\sqlceqp40.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\x86\sqlceme40.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\x86\sqlceer40EN.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\x86\sqlcecompact40.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\x86\sqlceca40.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\x86\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\x86\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\amd64\sqlcese40.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\amd64\sqlceqp40.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\amd64\sqlceme40.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\amd64\sqlceer40EN.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\amd64\sqlcecompact40.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\amd64\sqlceca40.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\amd64\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\amd64\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\EntityFramework.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\EntityFramework.SqlServer.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\EntityFramework.SqlServerCompact.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\PagedList.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\PagedList.Mvc.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\System.Data.SqlServerCe.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.Helpers.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.Mvc.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.Razor.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.Webpages.Deployment.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.Webpages.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.Webpages.Razor.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\EntityFramework.xml
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\EntityFramework.SqlServer.xml
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\EntityFramework.SqlServerCompact.xml
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\PagedList.xml
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\PagedList.Mvc.xml
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.Razor.xml
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.Webpages.xml
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.Webpages.Deployment.xml
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.Webpages.Razor.xml
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.Helpers.xml
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.Mvc.xml
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\obj\Debug\QLThuVien.csprojAssemblyReference.cache
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\obj\Debug\QLThuVien.csproj.CoreCompileInputs.cache
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\obj\Debug\QLThuVien.csproj.CopyComplete
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\obj\Debug\Vinabook.dll
+C:\Users\PIC\Desktop\QLTV\QLTV\QLTV\Vinabook\obj\Debug\Vinabook.pdb
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\obj\Debug\QLThuVien.csprojAssemblyReference.cache
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\obj\Debug\QLThuVien.csproj.CoreCompileInputs.cache
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\obj\Debug\Vinabook.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\obj\Debug\Vinabook.pdb
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\roslyn\csc.exe
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\roslyn\vbc.exe
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\roslyn\VBCSCompiler.exe
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\Vinabook.dll.config
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\Vinabook.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\Vinabook.pdb
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\x86\sqlcese40.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\x86\sqlceqp40.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\x86\sqlceme40.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\x86\sqlceer40EN.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\x86\sqlcecompact40.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\x86\sqlceca40.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\x86\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\x86\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\amd64\sqlcese40.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\amd64\sqlceqp40.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\amd64\sqlceme40.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\amd64\sqlceer40EN.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\amd64\sqlcecompact40.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\amd64\sqlceca40.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\amd64\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\amd64\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\EntityFramework.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\EntityFramework.SqlServer.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\EntityFramework.SqlServerCompact.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\PagedList.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\PagedList.Mvc.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\System.Data.SqlServerCe.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\System.Web.Helpers.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\System.Web.Mvc.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\System.Web.Razor.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\System.Web.Webpages.Deployment.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\System.Web.Webpages.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\System.Web.Webpages.Razor.dll
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\EntityFramework.xml
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\EntityFramework.SqlServer.xml
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\EntityFramework.SqlServerCompact.xml
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\PagedList.xml
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\PagedList.Mvc.xml
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\System.Web.Razor.xml
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\System.Web.Webpages.xml
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\System.Web.Webpages.Deployment.xml
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\System.Web.Webpages.Razor.xml
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\System.Web.Helpers.xml
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\bin\System.Web.Mvc.xml
+C:\Users\PIC\Desktop\QLTV\QLLLL\QLTV\QLTV\Vinabook\obj\Debug\QLThuVien.csproj.CopyComplete
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\roslyn\csc.exe
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\roslyn\vbc.exe
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\roslyn\VBCSCompiler.exe
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\Vinabook.dll.config
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\Vinabook.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\Vinabook.pdb
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\x86\sqlcese40.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\x86\sqlceqp40.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\x86\sqlceme40.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\x86\sqlceer40EN.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\x86\sqlcecompact40.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\x86\sqlceca40.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\x86\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\x86\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\amd64\sqlcese40.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\amd64\sqlceqp40.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\amd64\sqlceme40.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\amd64\sqlceer40EN.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\amd64\sqlcecompact40.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\amd64\sqlceca40.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\amd64\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\amd64\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\EntityFramework.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\EntityFramework.SqlServer.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\EntityFramework.SqlServerCompact.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\PagedList.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\PagedList.Mvc.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\System.Data.SqlServerCe.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\System.Web.Helpers.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\System.Web.Mvc.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\System.Web.Razor.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\System.Web.WebPages.Deployment.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\System.Web.WebPages.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\System.Web.WebPages.Razor.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\EntityFramework.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\EntityFramework.SqlServer.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\EntityFramework.SqlServerCompact.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\PagedList.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\PagedList.Mvc.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\System.Web.Helpers.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\System.Web.Mvc.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\System.Web.Razor.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\System.Web.WebPages.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\System.Web.WebPages.Deployment.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\bin\System.Web.WebPages.Razor.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\obj\Debug\QLThuVien.csprojAssemblyReference.cache
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\obj\Debug\QLThuVien.csproj.CoreCompileInputs.cache
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\obj\Debug\QLThuVien.csproj.CopyComplete
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\obj\Debug\Vinabook.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\Vinabook\obj\Debug\Vinabook.pdb
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\csc.exe
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\vbc.exe
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\VBCSCompiler.exe
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\Vinabook.dll.config
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\Vinabook.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\Vinabook.pdb
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\EntityFramework.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\EntityFramework.SqlServer.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\EntityFramework.SqlServerCompact.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\PagedList.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\PagedList.Mvc.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\System.Data.SqlServerCe.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.Helpers.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.Mvc.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.Razor.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.WebPages.Deployment.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.WebPages.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.WebPages.Razor.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\EntityFramework.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\EntityFramework.SqlServer.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\EntityFramework.SqlServerCompact.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\PagedList.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\PagedList.Mvc.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.Helpers.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.Mvc.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.Razor.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.WebPages.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.WebPages.Deployment.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\System.Web.WebPages.Razor.xml
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\obj\Debug\QLThuVien.csprojAssemblyReference.cache
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\obj\Debug\QLThuVien.csproj.CoreCompileInputs.cache
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\obj\Debug\QLThuVien.csproj.CopyComplete
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\obj\Debug\Vinabook.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\obj\Debug\Vinabook.pdb
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\csc.exe.config
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\csc.rsp
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\csi.exe
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\csi.rsp
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\System.AppContext.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\vbc.exe.config
+C:\Users\PIC\Desktop\New folder\QLTV\QLTV\QLTV\Vinabook\bin\roslyn\vbc.rsp
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\csc.exe.config
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\csc.rsp
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\csi.exe
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\csi.rsp
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\System.AppContext.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\vbc.exe.config
+C:\Users\PIC\Desktop\QLTV\Vinabook\bin\roslyn\vbc.rsp

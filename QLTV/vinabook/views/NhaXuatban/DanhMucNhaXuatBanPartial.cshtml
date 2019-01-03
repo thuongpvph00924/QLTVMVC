@@ -1,0 +1,16 @@
+﻿
+@using Vinabook.Models
+@model List<NhaXuatBan>
+
+<div class="single-sidebar">
+    <h2 class="sidebar-title">Nhà Phát Hành</h2>
+    <ul>
+        <li><a href=""><h4>Sách Mới Phát Hành</h4></a></li>
+        @foreach (var item in Model)
+        {
+
+            <li><a href="@Url.Action("SachTheoNhaXuatban","Sach", new {@manxb=@item.MaNXB })">@item.TenNXB</a></li>
+        }
+
+    </ul>
+</div>

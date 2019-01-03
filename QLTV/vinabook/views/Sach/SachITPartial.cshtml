@@ -1,0 +1,27 @@
+﻿@using Vinabook.Models;
+@*Định nghĩa kiểu dữ liệu cho biến Model*@
+@model List<Sach>
+<div class="col-md-4">
+    <div class="single-product-widget">
+        <h2 class="product-wid-title">Tài Liệu tin học</h2>
+        <a href="@Url.Action("SachTheoChuDe", new { @machude=ViewBag.MaChuDe })" class="wid-view-more">Xem tất cả</a>
+        @foreach(var item in Model)
+        { 
+        <div class="single-wid-product">
+            <a href="@Url.Action("XemChiTiet", new { @masach=item.MaSach })"><img src="@Url.Content("~/Content/HinhAnhSP/"+item.AnhBia)" alt="" class="product-thumb" /></a>
+            <h2><a href="@Url.Action("XemChiTiet", new { @masach=item.MaSach })">@item.TenSach</a></h2>
+            <div class="product-wid-rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="product-wid-price">
+                
+            </div>
+        </div>
+        }
+        
+    </div>
+</div>

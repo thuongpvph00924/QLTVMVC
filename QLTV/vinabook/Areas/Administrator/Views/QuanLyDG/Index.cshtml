@@ -1,0 +1,175 @@
+﻿@using PagedList.Mvc;
+@using PagedList;
+@model PagedList.PagedList<Vinabook.Models.KhachHang>
+@{
+                /**/
+
+                ViewBag.Title = "Index";
+                Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="container">
+    <div class=" row pull-left">
+        <a href="@Url.Action("Create")" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i> Thêm độc giả</a>
+    </div>
+    <br />
+    <p>&nbsp;</p>
+    <div class=" row pull-left">
+        <form action="/Administrator/QuanLyKH/TimKiemKH" method="post" style="width:300px">
+            <input id="txtTimKiem" name="txtTimKiem" placeholder=" search" class="search-query form-control " style="width:200px"
+                   type="text">
+        </form>
+    </div>
+    <br />
+    <p>&nbsp;</p>
+</div>
+<div class="table-responsive">
+    <table class="table table-bordered table-condensed table-hover table-striped">
+        <thead>
+            <tr>
+                <th>
+                    <span class="text-primary">@Html.DisplayNameFor(model => model.First().TaiKhoan)</span>
+                </th>
+                <th>
+                    <span class="text-primary">@Html.DisplayNameFor(model => model.First().HoTen)</span>
+                </th>
+                <th>
+                    <span class="text-primary">@Html.DisplayNameFor(model => model.First().NgaySinh)</span>
+                </th>
+                <th>
+                    <span class="text-primary">@Html.DisplayNameFor(model => model.First().GioiTinh)</span>
+                </th>
+                <th>
+                    <span class="text-primary">@Html.DisplayNameFor(model => model.First().DienThoai)</span>
+                </th>
+
+                <th>
+                    <span class="text-primary">@Html.DisplayNameFor(model => model.First().MatKhau)</span>
+                </th>
+                <th>
+                    <span class="text-primary">@Html.DisplayNameFor(model => model.First().Email)</span>
+                </th>
+                <th>
+                    <span class="text-primary">@Html.DisplayNameFor(model => model.First().DiaChi)</span>
+                </th>
+                <th>
+                    <span class="text-primary">Sửa</span>
+                </th>
+                <th>
+                    <span class="text-primary">Chi Tiết</span>
+                </th>
+                <th>
+                    <span class="text-primary">Xóa</span>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    @*<td>
+                            @Html.DisplayFor(modelItem => item.MaKH)
+                        </td>*@
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TaiKhoan)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HoTen)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NgaySinh)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.GioiTinh)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DienThoai)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MatKhau)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DiaChi)
+                    </td>
+                    <td>
+                        @*@Html.ActionLink("Edit", "Edit", new { @MaKH = item.MaKH }) |
+                            @Html.ActionLink("Details", "Details", new { @MaKH = item.MaKH }) |
+                            @Html.ActionLink("Delete", "Delete", new { @MaKH = item.MaKH })*@
+                        <a href="@Url.Action("Edit", new { @MaKH=item.MaKH})" class="btn btn-warning btn-sm btn-color-primary">
+                            <i class="glyphicon glyphicon-edit"></i>
+                        </a>
+                    </td>
+                    <td>
+                        @*<a href="@Url.Action("Details", new { @MaKH=item.MaKH})" class="btn btn-primary btn-sm btn-color-primary">
+                                <i class="glyphicon glyphicon-eye-open"></i>
+                            </a>*@
+                        <a onclick="ChiTietKH('@item.MaKH')" class="btn btn-primary btn-sm btn-color-primary"><i class="glyphicon glyphicon-list-alt"></i></a>
+                    </td>
+                    <td>
+                        <a href="@Url.Action("Delete", new { @MaKH=item.MaKH})" class="btn btn-danger btn-sm btn-color-primary">
+                            <i class="glyphicon glyphicon-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+@* Tạo link liên kết các trang*@
+Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/ @Model.PageCount
+<div class="MenuTrang">
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+</div>
+<style>
+
+    .MenuTrang li {
+        display: inline;
+    }
+</style>
+<script>
+
+    function ChiTietKH(makh) {
+        $.ajax({
+            type: 'POST',
+            url: '/Administrator/QuanLyKH/XemCTKH',
+            data: { makh: makh },
+            success: function (data) {
+                $.post(data.Url, function (partial) {
+                    $("#All_Dialog").html(partial)
+                });
+            }
+        });
+        $('#myModal').on('shown.bs.modal', function () {
+            $(this).find('.modal-dialog').css({
+                width: '800px',
+                height: 'auto',
+                'max-height': '100%'
+            });
+        });
+        $("#myModal").modal();
+    }
+</script>
+@* đây là cái bảng dialog *@
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Chi tiết độc giả</h4>
+            </div>
+            <div class="modal-body">
+                @* nội dung bên trong all_dialog *@
+                <div id="All_Dialog"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>

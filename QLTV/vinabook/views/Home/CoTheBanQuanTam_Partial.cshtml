@@ -1,0 +1,30 @@
+﻿
+@using Vinabook.Models;
+@*Định nghĩa kiểu dữ liệu cho biến Model*@
+@model List<Sach>
+
+
+<div class="latest-product">
+
+    <div class="product-carousel">
+        @foreach (var item in Model)
+        {
+        <div class="single-product">
+            <div class="product-f-image">
+                <img src="@Url.Content("~/Content/HinhAnhSP/"+item.AnhBia)" alt="" />
+                <div class="product-hover">
+
+                    <a href="@Url.Action("XemChiTiet","Sach", new { @masach=item.MaSach })" class="view-details-link"><i class="fa fa-link"></i> Xem Chi Tiết</a>
+                </div>
+            </div>
+
+            <a href="~/Content/PDF/ThuVien.pdf" target="_blank" type="button" class="btn btn-danger" download="@item.TenSach">PDF</a>
+            <h2><a href="@Url.Action("XemChiTiet", "Sach", new { @masach=item.MaSach })">@item.TenSach</a></h2>
+            <div class="product-carousel-price">
+
+            </div>
+        </div>
+        }
+
+    </div>
+</div>
